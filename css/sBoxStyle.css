@@ -1,0 +1,124 @@
+a {
+    color: gray;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    border: 1px solid #eee;
+    flex-basis: 32%;
+    padding: 10px;
+    max-width: 370px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-box img {
+    width: 100%;
+    aspect-ratio: 1/0.6;
+    object-fit: cover;
+}
+
+.service-box h3 {
+    margin: 5px 0px 10px 0px;
+}
+
+.service-box p {
+    margin: 0px 0px 10px;
+}
+
+.call-to {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.call-to-action,
+.call-to-delete,
+.call-to-edit {
+    margin-left: 10px;
+}
+
+.call-to-action a,
+.call-to-delete a,
+.call-to-edit a {
+    border: 1px solid transparent;
+    color: white;
+    padding: 8px 14px;
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.call-to-action a {
+    background-color: gray;
+}
+
+.call-to-delete a {
+    background-color: rgba(255, 20, 20, 0.85);
+}
+
+.call-to-edit a {
+    background-color: rgba(25, 200, 28, 0.85);
+}
+
+.call-to-delete a:hover {
+    border: 1px solid rgba(255, 20, 20, 0.6);
+    font-weight: 500;
+    background-color: transparent;
+    color: black;
+}
+
+.call-to-edit a:hover {
+    border: 1px solid rgba(25, 200, 28, 0.6);
+    font-weight: 500;
+    background-color: transparent;
+    color: black;
+}
+
+.call-to-action a:hover {
+    background-color: transparent;
+    color: rgb(37, 30, 30);
+    border: 1px solid gray;
+}
+
+@media screen and (max-width:850px) {
+    article {
+        padding: 20px;
+        margin-top: 82x;
+    }
+    .service-box {
+        flex-basis: 48%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    article {
+        padding: 20px;
+        margin-top: 135px;
+    }
+    .services-container {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    article {
+        order: -1;
+    }
+}
